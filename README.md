@@ -2,6 +2,15 @@
 
 Este repositório reúne os projetos desenvolvidos durante a minha formação em Engenharia de Dados Azure. Cada projeto aborda um caso prático que simula cenários do mundo real, utilizando ferramentas e serviços da plataforma Azure.
 
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
+
+- [Git](https://git-scm.com/)
+- [Python](https://www.python.org/) (se necessário para os scripts)
+- Conta no [Microsoft Azure](https://azure.microsoft.com/) (para replicar os projetos)
+- Editor de código, como o [VS Code](https://code.visualstudio.com/)
+
 ## Projetos
 
 ### 1. Caminhões SA
@@ -82,3 +91,25 @@ Estruturação de suporte para dados massivos e implementação de inteligência
 │   ├── scripts/
 │   └── README.md
 └── README.md
+
+```
+
+## Como Clonar o Repositório
+
+Siga as etapas abaixo para clonar este repositório e explorá-lo localmente:
+
+1. Certifique-se de ter o [Git](https://git-scm.com/) instalado.
+2. Abra o terminal ou prompt de comando e execute o comando abaixo para clonar o repositório:
+
+```bash
+git clone https://github.com/Adrianogvs/002-AZURE.git
+```
+
+3. Navegue até o diretório clonado:
+```bash
+cd 002-AZURE
+```
+
+4. Abra os arquivos utilizando o editor de código de sua preferência, como o [VS Code](https://code.visualstudio.com/).
+
+
