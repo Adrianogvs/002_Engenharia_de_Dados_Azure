@@ -1,49 +1,84 @@
 # Portfólio - Engenharia de Dados Azure
 
-Este repositório contém projetos desenvolvidos durante a formação em Engenharia de Dados com Azure. Cada pasta contém um estudo de caso diferente, com suas respectivas implementações e documentações.
+Este repositório reúne os projetos desenvolvidos durante a minha formação em Engenharia de Dados Azure. Cada projeto aborda um caso prático que simula cenários do mundo real, utilizando ferramentas e serviços da plataforma Azure.
 
 ## Projetos
 
-1. **Caminhões SA**
-   - Descrição: Monitoramento e controle de temperatura de cargas em tempo real.
-   - Ferramentas: Event Hub, Synapse Analytics.
-   - [Acesse o projeto](Caminhoes_SA/README.md)
+### 1. Caminhões SA
+**Descrição:**  
+Projeto voltado para o monitoramento e controle em tempo real da temperatura de cargas de caminhões de uma empresa fictícia de transporte de alimentos congelados.
 
-2. **Market Star**
-   - Descrição: Controle de receitas e despesas para cursos online.
-   - Ferramentas: Data Factory, Data Lake.
-   - [Acesse o projeto](Market_Star/README.md)
+**Tecnologias utilizadas:**  
+- Event Hub  
+- Synapse Analytics  
 
-3. **NeoBank**
-   - Descrição: Estruturação de suporte a dados massivos para um banco digital.
-   - Ferramentas: Synapse Analytics, DataBricks, Python.
-   - [Acesse o projeto](NeoBank/README.md)
+**Principais entregas:**  
+- Monitoramento de temperatura em tempo real.  
+- Criação de alertas para equipes de logística.  
+- Geração de relatórios com variações de temperatura.  
 
----
-
-### 3. **README mais detalhados nos subprojetos**
-Nos READMEs de cada pasta, descreva:
-- **Objetivo do projeto**: Resuma o problema e o contexto.
-- **Tecnologias usadas**: Liste as ferramentas e linguagens utilizadas.
-- **Estrutura de pastas**: Explique o que cada pasta contém.
-- **Resultados e outputs**: Destaque resultados obtidos e insights importantes.
+[Confira mais detalhes](Caminhoes_SA/README.md)
 
 ---
 
-### 4. **Adicione uma pasta `notebooks/` para o NeoBank**
-Como o projeto NeoBank usa DataBricks, pode ser útil criar uma pasta chamada `notebooks/` específica para armazenar seus notebooks Python ou exportações do DataBricks.
+### 2. Market Star
+**Descrição:**  
+Desenvolvimento de uma infraestrutura centralizada na nuvem para controle de receitas e despesas de uma empresa fictícia que vende cursos online. O objetivo foi integrar dados de diferentes fontes, como internet, arquivos CSV e Excel.
+
+**Tecnologias utilizadas:**  
+- Data Factory  
+- Data Lake  
+
+**Principais entregas:**  
+- Infraestrutura de dados centralizada.  
+- Relatório visual estilo OnePage.  
+- Integração de diferentes fontes de dados.  
+
+[Confira mais detalhes](Market_Star/README.md)
 
 ---
 
-### 5. **Considere um arquivo de licença**
-Adicione um arquivo `LICENSE` na raiz para indicar sob qual licença os arquivos do repositório estão disponíveis (por exemplo, MIT ou Apache).
+### 3. NeoBank
+**Descrição:**  
+Estruturação de suporte para dados massivos e implementação de inteligência artificial em um banco digital fictício. O projeto abordou a criação de uma infraestrutura para analisar e escalar o volume de dados gerado pelo banco.
+
+**Tecnologias utilizadas:**  
+- Synapse Analytics  
+- DataBricks  
+- Python  
+
+**Principais entregas:**  
+- Estruturação de dados utilizando Synapse e DataBricks.  
+- Criação de notebooks para análise e transformação de dados.  
+- Modelagem de dados para inteligência artificial.  
+
+[Confira mais detalhes](NeoBank/README.md)
 
 ---
 
-### 6. **Scripts organizados por categorias (opcional)**
-Se houver muitos scripts na pasta `scripts/`, você pode dividi-los por funcionalidade:
-- **`ingestao/`**
-- **`transformacao/`**
-- **`modelagem/`**
+## Estrutura do Repositório
 
----
+```plaintext
+002-AZURE/
+├── Caminhoes_SA/
+│   ├── dados/
+│   ├── dashboards/
+│   ├── documentos/
+│   ├── picture/
+│   ├── scripts/
+│   └── README.md
+├── Market_Star/
+│   ├── dados/
+│   ├── dashboards/
+│   ├── documentos/
+│   ├── picture/
+│   ├── scripts/
+│   └── README.md
+├── NeoBank/
+│   ├── dados/
+│   ├── dashboards/
+│   ├── documentos/
+│   ├── picture/
+│   ├── scripts/
+│   └── README.md
+└── README.md
