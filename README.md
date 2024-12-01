@@ -47,5 +47,3 @@ Se houver muitos scripts na pasta `scripts/`, você pode dividi-los por funciona
 - **`modelagem/`**
 
 ---
-
-Essas melhorias deixarão seu portfólio ainda mais profissional e fácil de entender para qualquer pessoa que acessar! Se precisar de ajuda para implementar alguma dessas ideias, avise!
