@@ -91,7 +91,6 @@ Estruturação de suporte para dados massivos e implementação de inteligência
 │   ├── scripts/
 │   └── README.md
 └── README.md
-
 ```
 
 ## Como Clonar o Repositório
