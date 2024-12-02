@@ -106,7 +106,7 @@ git clone https://github.com/Adrianogvs/002-AZURE.git
 
 3. Navegue até o diretório clonado:
 ```bash
-cd 002-AZURE
+cd 002_AZURE
 ```
 
 4. Abra os arquivos utilizando o editor de código de sua preferência, como o [VS Code](https://code.visualstudio.com/).
