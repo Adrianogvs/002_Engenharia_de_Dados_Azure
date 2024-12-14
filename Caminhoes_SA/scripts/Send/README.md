@@ -125,5 +125,7 @@ if __name__ == "__main__":
 ## 8. Validando o Envio e Recebimento de Mensagens
 Teste o envio e recebimento de mensagens para validar a configuração do Event Hubs.
 
+![Políticas de Acesso Compartilhado](../../picture/Send/16-TesteRealizadoComSucesso.png)
+
 ## Conclusão
 Você configurou com sucesso um Event Hubs no Azure. Agora é possível utilizá-lo para capturar e processar eventos em sua solução de engenharia de dados.
