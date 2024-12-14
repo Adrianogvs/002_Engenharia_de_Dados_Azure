@@ -17,6 +17,10 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 **Descrição:**  
 Projeto voltado para o monitoramento e controle em tempo real da temperatura de cargas de caminhões de uma empresa fictícia de transporte de alimentos congelados.
 
+**Detalhes dos Scripts:**
+- [Envio de Eventos (Send)](Caminhoes_SA/scripts/Send/README.md)  
+- [Recebimento de Eventos (Receive)](Caminhoes_SA/scripts/Receive/README.md)
+
 **Tecnologias utilizadas:**  
 - Event Hub  
 - Synapse Analytics  
@@ -25,8 +29,6 @@ Projeto voltado para o monitoramento e controle em tempo real da temperatura de 
 - Monitoramento de temperatura em tempo real.  
 - Criação de alertas para equipes de logística.  
 - Geração de relatórios com variações de temperatura.  
-
-[Confira mais detalhes](Caminhoes_SA/README.md)
 
 ---
 
@@ -75,6 +77,12 @@ Estruturação de suporte para dados massivos e implementação de inteligência
 │   ├── documentos/
 │   ├── picture/
 │   ├── scripts/
+│   │   ├── Send/
+│   │   │   ├── EventHubsSend.py
+│   │   │   └── README.md
+│   │   ├── Receive/
+│   │       ├── EventHubsReceive.py
+│   │       └── README.md
 │   └── README.md
 ├── Market_Star/
 │   ├── dados/
@@ -110,5 +118,3 @@ cd 002_AZURE
 ```
 
 4. Abra os arquivos utilizando o editor de código de sua preferência, como o [VS Code](https://code.visualstudio.com/).
-
-
