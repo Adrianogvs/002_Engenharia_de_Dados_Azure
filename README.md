@@ -18,9 +18,9 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 Projeto voltado para o monitoramento e controle em tempo real da temperatura de cargas de caminhões de uma empresa fictícia de transporte de alimentos congelados.
 
 **Detalhes dos Scripts:**
-- [Envio de Eventos (Send)](C:\Users\Administrador\Documents\002_Engenharia_de_Dados_Azure\Caminhoes_SA\scripts\01-Send\README.md)  
-- [Recebimento de Eventos (Receive)](C:\Users\Administrador\Documents\002_Engenharia_de_Dados_Azure\Caminhoes_SA\scripts\02-Receive\EventHubsReceive.py)
-- [Produção, Processamento e Consumo de Eventos (StreamAnalyzer)](C:\Users\Administrador\Documents\002_Engenharia_de_Dados_Azure\Caminhoes_SA\scripts\03-StreamAnalyzer/README.md)
+- [Envio de Eventos (Send)](./01-Send/README.md)  
+- [Recebimento de Eventos (Receive)](./02-Receive/EventHubsReceive.py)
+- [Produção, Processamento e Consumo de Eventos (StreamAnalyzer)](./03-StreamAnalyzer/README.md)
 
 **Tecnologias utilizadas:**  
 - Event Hub  
