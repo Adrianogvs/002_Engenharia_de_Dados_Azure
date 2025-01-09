@@ -1,4 +1,4 @@
-# Guia de Criação de um Datalake
+# Guia de Criação de um Data Lake
 
 Este guia passo a passo detalha como criar e configurar um Datalake no Azure para armazenar os dados do EventHubReceive. Vamos criar as camadas Bronze, Silver e Gold para a estruturação dos dados.
 
