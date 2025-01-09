@@ -19,7 +19,7 @@ Projeto voltado para o monitoramento e controle em tempo real da temperatura de 
 
 ### Arquitetura
 
-![Arquitetura](C:\Users\Administrador\Documents\002_Engenharia_de_Dados_Azure\Caminhoes_SA\picture\01.png)
+![Arquitetura](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/picture/01.png)
 
 Esta arquitetura é projetada para capturar, processar e analisar dados provenientes de sensores instalados em caminhões e em uma fábrica. Ela utiliza tecnologias da **Azure** para ingestão, processamento em tempo real e visualização dos dados.
 
