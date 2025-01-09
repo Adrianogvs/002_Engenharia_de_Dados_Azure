@@ -13,7 +13,7 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
 ## Projetos
 
-### 1. Caminhões SA
+### [1. Caminhões SA](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/tree/main/Caminhoes_SA)
 **Descrição:**  
 Projeto voltado para o monitoramento e controle em tempo real da temperatura de cargas de caminhões de uma empresa fictícia de transporte de alimentos congelados.
 
@@ -54,7 +54,7 @@ Essa arquitetura é ideal para monitorar operações logísticas e industriais, 
 
 ---
 
-### 2. Market Star
+### [2. Market Star](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/tree/main/Market_Star)
 **Descrição:**  
 Desenvolvimento de uma infraestrutura centralizada na nuvem para controle de receitas e despesas de uma empresa fictícia que vende cursos online. O objetivo foi integrar dados de diferentes fontes, como internet, arquivos CSV e Excel.
 
@@ -71,7 +71,7 @@ Desenvolvimento de uma infraestrutura centralizada na nuvem para controle de rec
 
 ---
 
-### 3. NeoBank
+### [3. NeoBank](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/tree/main/NeoBank)
 **Descrição:**  
 Estruturação de suporte para dados massivos e implementação de inteligência artificial em um banco digital fictício. O projeto abordou a criação de uma infraestrutura para analisar e escalar o volume de dados gerado pelo banco.
 
