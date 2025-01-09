@@ -197,3 +197,6 @@ code .
 Com esses passos concluídos, seu ambiente estará configurado e pronto para explorar e trabalhar no repositório.
 
 
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE). Sinta-se à vontade para contribuir, modificar e usar o código conforme as diretrizes da licença.
