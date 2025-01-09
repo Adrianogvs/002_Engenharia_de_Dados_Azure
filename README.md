@@ -136,14 +136,12 @@ cd 002_Engenharia_de_Dados_Azure
 Crie e ative um ambiente virtual para isolar as dependências do projeto:
 * No Wondows
 ```bash
-python -m venv venv
-.\venv\Scripts\activate
+python -m venv .venv
 ```
-* No Mac
 ```bash
-python -m venv venv
-source venv/bin/activate
+source .venv/Scripts/activate
 ```
+
 <i><mark>Dica: Para desativar o ambiente virtual, use o comando deactivate.</mark></i>
 
 <p></p>
