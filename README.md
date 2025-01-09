@@ -195,6 +195,6 @@ Abra o diretório do projeto no editor de código de sua preferência. Por exemp
 code .
 ```
 Com esses passos concluídos, seu ambiente estará configurado e pronto para explorar e trabalhar no repositório.
-```perl
+--
 Agora, você pode salvar este texto como um arquivo `.md`, como por exemplo `README.md`, sem precisar ajustar manualmente no VS Code. Basta copiar e colar! 😊
-```
+
