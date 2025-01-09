@@ -135,7 +135,7 @@ Este guia passo a passo detalha como criar e configurar um Datalake no Azure par
 1. Navegue até **Segurança + rede** na conta de armazenamento **caeventhubsreceive**.
 2. Selecione **Chaves de acesso** e copie a **Cadeia de conexão** da **key1**.
 
-   ![Passo 12 - Chaves de Acesso](../../picture/Receive\17.png)
+   ![Passo 12 - Chaves de Acesso](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/picture/Receive/17.png)
 
 3. Preencha o arquivo `.env` com os seguintes campos:
    ```env
@@ -151,11 +151,11 @@ Este guia passo a passo detalha como criar e configurar um Datalake no Azure par
 1. Navegue até o **Hub de Eventos** criado anteriormente.
 2. Confirme o nome do Event Hub: **eventhubreceive**.
 
-   ![Passo 13 - Nome do Event Hub](../../picture/Receive\18.png)
+   ![Passo 13 - Nome do Event Hub](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/picture/Receive/18.png)
 
 3. Acesse **Políticas de acesso compartilhado** no namespace e copie a **Cadeia de conexão** da **RootManageSharedAccessKey**.
 
-   ![Passo 13.2 - Cadeia de Conexão do Namespace](../../picture/Receive\19.png)
+   ![Passo 13.2 - Cadeia de Conexão do Namespace](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/picture/Receive/19.png)
 
 4. Atualize o arquivo `.env` com os seguintes campos:
    ```env
@@ -250,11 +250,11 @@ if __name__ == "__main__":
 ## Passo 16: Validando o Envio e Recebimento de Mensagens
 Teste o envio e recebimento de mensagens para validar a configuração do Event Hubs e Datalake.
 
-![Políticas de Acesso Compartilhado](../../picture/Receive/22.png)
+![Políticas de Acesso Compartilhado](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/picture/Receive/22.png)
 
-![Políticas de Acesso Compartilhado](../../picture/Receive/20.png)
+![Políticas de Acesso Compartilhado](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/picture/Receive/20.png)
 
-![Políticas de Acesso Compartilhado](../../picture/Receive/21.png)
+![Políticas de Acesso Compartilhado](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/picture/Receive/21.png)
 
 ## Conclusão
 Você configurou com sucesso um Event Hubs no Azure. Agora é possível utilizá-lo para capturar e processar eventos em sua solução de engenharia de dados.
