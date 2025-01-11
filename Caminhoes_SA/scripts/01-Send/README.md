@@ -9,7 +9,7 @@ Este guia passo a passo detalha como criar e configurar um Event Hubs no Azure p
 1. No portal do Azure, pesquise por **Hubs de Eventos** na barra de pesquisa superior.
 2. Clique na opção **Hubs de Eventos** para abrir o painel.
 
-![Pesquisa Hubs de Eventos](../../picture/Send/01-CriarEventHubs.png)
+![Pesquisa Hubs de Eventos](../../picture/Send/01.png)
 
 ---
 
@@ -25,11 +25,11 @@ Este guia passo a passo detalha como criar e configurar um Event Hubs no Azure p
    - **Unidades de Produtividade**: Configure como **1**.
 3. Clique em **Revisar + criar** e, em seguida, em **Criar**.
 
-![Criar Namespace](../../picture/Send/02-CriarNamespace.png)
+![Criar Namespace](../../picture/Send/02.png)
 
 Após a validação, o namespace será criado com as informações especificadas.
 
-![Namespace Criado](../../picture/Send/04-NamespaceCreiado.png)
+![Namespace Criado](../../picture/Send/04.png)
 
 ---
 
@@ -43,11 +43,11 @@ Após a validação, o namespace será criado com as informações especificadas
    - **Tempo de Retenção (horas)**: Configure como **1**.
 3. Clique em **Revisar + criar** e, em seguida, em **Criar**.
 
-![Criar Hub de Eventos](../../picture/Send/05-CriarPrimeiroEventHubs.png)
+![Criar Hub de Eventos](../../picture/Send/05.png)
 
 Após a validação, o hub de eventos estará ativo.
 
-![Hub de Eventos Criado](../../picture/Send/09-EventHubsCriadoSucesso.png)
+![Hub de Eventos Criado](../../picture/Send/09.png)
 
 ---
 
@@ -57,7 +57,7 @@ Após a validação, o hub de eventos estará ativo.
 2. Clique em **RootManageSharedAccessKey** para visualizar as configurações de chaves de acesso.
 3. Copie as chaves primárias ou secundárias para uso posterior.
 
-![Políticas de Acesso Compartilhado](../../picture/Send/13-PoliticasDeAcessoCompartilhado.png)
+![Políticas de Acesso Compartilhado](../../picture/Send/13.png)
 
 ---
 
@@ -68,8 +68,8 @@ Após a validação, o hub de eventos estará ativo.
 Crie um arquivo chamado `.env` na raiz do seu projeto e adicione as variáveis de conexão:
 
 ```env
-CONNECTION_STR=seu_endpoint
-EVENT_HUB_NAME=nome_do_event_hub
+EH_CONNECTION_STR=seu_endpoint
+EH_EVENT_HUB_NAME=nome_do_event_hub
 ```
 
 ## 6. Instalando as Dependências
@@ -90,15 +90,15 @@ import os
 load_dotenv()
 
 # Informações de conexão (obtidas do .env)
-CONNECTION_STR = os.getenv('CONNECTION_STR')
-EVENT_HUB_NAME = os.getenv('EVENT_HUB_NAME')
+EH_CONNECTION_STR = os.getenv('EH_CONNECTION_STR')
+EH_EVENT_HUB_NAME = os.getenv('EH_EVENT_HUB_NAME')
 
 def send_event_to_event_hub():
     try:
         # Criar um cliente do Event Hub
-        producer = EventHubProducerClient.from_connection_string(
-            conn_str=CONNECTION_STR,
-            eventhub_name=EVENT_HUB_NAME
+        producer = EventHubProducerClient.from_EH_CONNECTION_STRing(
+            conn_str=EH_CONNECTION_STR,
+            eventhub_name=EH_EVENT_HUB_NAME
         )
 
         # Criar um lote de eventos
@@ -125,7 +125,7 @@ if __name__ == "__main__":
 ## 8. Validando o Envio e Recebimento de Mensagens
 Teste o envio e recebimento de mensagens para validar a configuração do Event Hubs.
 
-![Políticas de Acesso Compartilhado](../../picture/Send/16-TesteRealizadoComSucesso.png)
+![Políticas de Acesso Compartilhado](../../picture/Send/16.png)
 
 ## Conclusão
 Você configurou com sucesso um Event Hubs no Azure. Agora é possível utilizá-lo para capturar e processar eventos em sua solução de engenharia de dados.

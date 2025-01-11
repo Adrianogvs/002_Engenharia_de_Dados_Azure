@@ -13,9 +13,17 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 
 ## Projetos
 
-### 1. Caminhões SA
+### [1. Caminhões SA](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/tree/main/Caminhoes_SA)
 **Descrição:**  
 Projeto voltado para o monitoramento e controle em tempo real da temperatura de cargas de caminhões de uma empresa fictícia de transporte de alimentos congelados.
+
+### Arquitetura
+
+![Arquitetura](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/picture/01.png)
+
+Esta arquitetura é projetada para capturar, processar e analisar dados provenientes de sensores instalados em caminhões e em uma fábrica. Ela utiliza tecnologias da **Azure** para ingestão, processamento em tempo real e visualização dos dados.
+
+
 
 **Detalhes dos Scripts:**
 - [Envio de Eventos (Send)](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/scripts/01-Send/README.md)  
@@ -23,8 +31,10 @@ Projeto voltado para o monitoramento e controle em tempo real da temperatura de 
 - [Produção, Processamento e Consumo de Eventos (StreamAnalyzer)](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/blob/main/Caminhoes_SA/scripts/03-StreamAnalyzer/README.md)
 
 **Tecnologias utilizadas:**  
+- Python
 - Event Hub  
 - Synapse Analytics  
+- Data lake
 - Azure Stream Analytics
 - Power BI Streaming
 
@@ -33,9 +43,18 @@ Projeto voltado para o monitoramento e controle em tempo real da temperatura de 
 - Criação de alertas para equipes de logística.  
 - Geração de relatórios com variações de temperatura.  
 
+**Benefícios**
+- **Escalabilidade**: Capacidade de processar grandes volumes de dados de forma eficiente.
+- **Análise em Tempo Real**: Detecção de problemas e geração de insights rapidamente.
+- **Visualização Dinâmica**: Dashboards interativos que suportam a tomada de decisão.
+
+Essa arquitetura é ideal para monitorar operações logísticas e industriais, garantindo maior eficiência e segurança operacional.
+
+
+
 ---
 
-### 2. Market Star
+### [2. Market Star](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/tree/main/Market_Star)
 **Descrição:**  
 Desenvolvimento de uma infraestrutura centralizada na nuvem para controle de receitas e despesas de uma empresa fictícia que vende cursos online. O objetivo foi integrar dados de diferentes fontes, como internet, arquivos CSV e Excel.
 
@@ -52,7 +71,7 @@ Desenvolvimento de uma infraestrutura centralizada na nuvem para controle de rec
 
 ---
 
-### 3. NeoBank
+### [3. NeoBank](https://github.com/Adrianogvs/002_Engenharia_de_Dados_Azure/tree/main/NeoBank)
 **Descrição:**  
 Estruturação de suporte para dados massivos e implementação de inteligência artificial em um banco digital fictício. O projeto abordou a criação de uma infraestrutura para analisar e escalar o volume de dados gerado pelo banco.
 
@@ -85,17 +104,16 @@ Estruturação de suporte para dados massivos e implementação de inteligência
 |   |   ├── Receive
 |   |   ├── Send
 |   |   └── StreamAnalyzer
-│   ├── scripts/
-│   │   ├── 01-Send/
-│   │   │   ├── EventHubsSend.py
-│   │   │   └── README.md
-│   │   ├── 02-Receive/
-│   │   │   ├── EventHubsReceive.py
-│   │   │   └── README.md
-│   │   ├── 03-StreamAnalyzer/
-│   │   │   │── EventHubsProducer.py
-│   │   │   └── README.md
-│   └── README.md
+│   └── scripts/
+│       ├── 01-Send/
+│       │   ├── EventHubsSend.py
+│       │   └── README.md
+│       ├── 02-Receive/
+│       │   ├── EventHubsReceive.py
+│       │   └── README.md
+│       └── 03-StreamAnalyzer/
+│           │── EventHubsProducer.py
+│           └── README.md
 ├── Market_Star/
 │   ├── dados/
 │   ├── dashboards/
@@ -136,14 +154,12 @@ cd 002_Engenharia_de_Dados_Azure
 Crie e ative um ambiente virtual para isolar as dependências do projeto:
 * No Wondows
 ```bash
-python -m venv venv
-.\venv\Scripts\activate
+python -m venv .venv
 ```
-* No Mac
 ```bash
-python -m venv venv
-source venv/bin/activate
+source .venv/Scripts/activate
 ```
+
 <i><mark>Dica: Para desativar o ambiente virtual, use o comando deactivate.</mark></i>
 
 <p></p>
@@ -179,6 +195,8 @@ Abra o diretório do projeto no editor de código de sua preferência. Por exemp
 code .
 ```
 Com esses passos concluídos, seu ambiente estará configurado e pronto para explorar e trabalhar no repositório.
-```perl
-Agora, você pode salvar este texto como um arquivo `.md`, como por exemplo `README.md`, sem precisar ajustar manualmente no VS Code. Basta copiar e colar! 😊
-```
+
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE). Sinta-se à vontade para contribuir, modificar e usar o código conforme as diretrizes da licença.

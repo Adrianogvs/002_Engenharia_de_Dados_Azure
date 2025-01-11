@@ -6,15 +6,16 @@ import os
 load_dotenv()
 
 # Informações de conexão (obtidas do .env)
-CONNECTION_STR = os.getenv('CONNECTION_STR')
-EVENT_HUB_NAME = os.getenv('EVENT_HUB_NAME')
+EH_CONNECTION_STR = os.getenv('EH_CONNECTION_STR')
+EH_EVENT_HUB_NAME = os.getenv('EH_EVENT_HUB_NAME')
 
 def send_event_to_event_hub():
+    producer = None
     try:
         # Criar um cliente do Event Hub
         producer = EventHubProducerClient.from_connection_string(
-            conn_str=CONNECTION_STR,
-            eventhub_name=EVENT_HUB_NAME
+            conn_str=EH_CONNECTION_STR,
+            eventhub_name=EH_EVENT_HUB_NAME
         )
 
         # Criar um lote de eventos
@@ -32,8 +33,9 @@ def send_event_to_event_hub():
     except Exception as e:
         print(f"Erro ao enviar eventos: {e}")
     finally:
-        # Fechar a conexão
-        producer.close()
+        # Fechar a conexão se o producer foi inicializado
+        if producer:
+            producer.close()
 
 if __name__ == "__main__":
     send_event_to_event_hub()
