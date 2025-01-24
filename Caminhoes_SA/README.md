@@ -74,3 +74,4 @@ Cada componente possui scripts específicos para execução das funções.
 
 ### **Conclusão**  
 Este projeto é essencial para empresas do setor logístico que lidam com transporte de produtos sensíveis à temperatura, como alimentos congelados. Ele garante maior controle, eficiência operacional e segurança, além de reduzir custos com perdas de mercadorias devido a falhas no monitoramento.
+
